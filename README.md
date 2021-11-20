@@ -1,113 +1,108 @@
-# ⚡ vite-react-ts-tailwind-starter
+# Gatsby Starter Tailwind
 
-Starter using Vite + React + TypeScript + Tailwind with Firebase.
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
 
-## Motivation
+<div align="center">
+  <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
+</div>
 
-Improve building your faster **prototyping** by using Vite, TypeScript, React, TailwindCSS, Firebase.
+<div align="center">
+  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind CSS</a>, a utility-first CSS framework.</strong><br />
+  Uses Tailwind CSS' built-in purge option to remove unused CSS.<br />
+  Illustrations by <a href="https://undraw.co/">unDraw</a>.
+  <br />
+  <br />
+</div>
+  
+![alt text](https://i.ibb.co/McWdstP/localhost-8000-contact-i-Pad-Pro-1.png "Screenshot of Gatsby Starter Tailwind homepage")
+  
+<p align="center">View demo <a href="https://gatsby-starter-tailwind.taylorbryant.dev/">here</a>.</p>
 
-This starter uses following libraries:
+## What is Tailwind CSS?
 
-- Vite
-- React
-  - React Router
-- TypeScript
-- Tailwind CSS
-  - daisyUI
-- Firebase(v9, modular)
-- ESLint
-- Prettier
+> "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces."
+> –[Tailwind CSS](https://tailwindcss.com)
 
-## Set up
+## What is Gatsby?
 
-```shell
-mv .env.local.example .env.local
-yarn
-yarn dev
+> "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps." -[Gatsby](https://www.gatsbyjs.org/)
+
+## Get started
+
+Install the Gatsby CLI:
+
+```sh
+npm install --global gatsby-cli
 ```
 
-### Firebase
+Create a new Gatsby project using this starter:
 
-If you **DO NOT** use Firebase, you should do:
+```sh
+gatsby new my-new-website https://github.com/taylorbryant/gatsby-starter-tailwind
+```
 
-- Delete the Firebase-related code: you check Main.tsx, SignInButton.tsx, SignOutButton.tsx.
-- And then delete `src/lib/firebase.ts`
-- Run `yarn remove firebase`
-- Remove `VITE_FIREBASE_*` env values from `.env.local`
+Build a stylesheet from your Tailwind CSS config and run the project in development mode:
 
-If you want to use Firebase, you should do:
+```sh
+cd my-new-website
+npm run develop
+```
 
-- copy Firebase env values from Firebase Console, and paste them to `.env.local`.
-- enable Google Auth in Firebase Console. ref: https://firebase.google.com/docs/auth/web/google-signin#before_you_begin
+## Format and lint
 
-## Vite
+- `npm run analyze` - See what ESLint and Prettier can fix
+- `npm run fix` - Run Prettier and ESLint with the `--fix` option
 
-[Vite](https://github.com/vitejs/vite) is a fast frontend build tool. According to the [README](https://github.com/vitejs/vite/blob/main/README.md), it consists of two major parts:
+## Build your site
 
-- A dev server that serves your source files over native ES modules, with rich built-in features and astonishingly fast Hot Module Replacement (HMR).
-- A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+Use `npm run build` to build your site for production.
 
-## React
+## Deployment
 
-[React](https://github.com/facebook/react) is a JavaScript library for building user interfaces.
+### Netlify
 
-Due to its awesome renderer system, there are many [React Renderor](https://github.com/chentsulin/awesome-react-renderer). So React can be not used only Web, for example, used by [React Native](https://reactnative.dev/).
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/gatsby-starter-tailwind)
 
-Let's dive into React and Vite can use with React.
+### Vercel
 
-## TypeScript
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Ftaylorbryant%2Fgatsby-starter-tailwind%2Ftree%2Fmaster)
 
-[TypeScript](https://github.com/microsoft/TypeScript) is a superset of JavaScript. It is just one of NPM library, but it provides an original compiler.
+## Resources
 
-When you use TypeScript with React, you can write JSX with TypeScript, called TSX. Then you can develop views written by  **Type-Safe** template.
+- [Gatsby documentation](https://www.gatsbyjs.org/docs/)
+- [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
+- [Prettier documentation](https://prettier.io/docs/en/index.html)
+- [ESLint documentation](https://eslint.org/docs/user-guide/configuring)
 
-## Tailwind CSS
+## License
 
-[Tailwind CSS](https://tailwindcss.com/) is modern utility-first CSS framework. It provides many CSS rules, but these are purged when production builds. So developers do not worry about CSS asset size for performance optimization.
+[MIT](https://github.com/taylorbryant/gatsby-starter-tailwind/blob/master/LICENSE.md)
 
-In VSCode, I recommend to use [intellisense extension](https://tailwindcss.com/docs/intellisense).
+## How you can help
 
-Frequently, React developers are worried about how to write CSS in TSX(JSX) template. You must choose from CSS Modules, [styled-components](https://styled-components.com/), [linaria](https://github.com/callstack/linaria), and so on.
-Additionally, CSS architecture is difficult about scoping, e.g. BEM, FLOCSS.
+Enjoying Gatsby Starter Tailwind and want to help? You can:
 
-When you decide to use Tailwind, you only write utility-first CSS classes, you don't have to worry about them!
+- [Create an issue](https://github.com/taylorbryant/gatsby-starter-tailwind/issues/new) with some constructive criticism
+- [Submit a pull request](https://github.com/taylorbryant/gatsby-starter-tailwind/compare) with some improvements to the project
 
-### daisyUI
+## Contributors
 
-[daisyUI](https://daisyui.com/) is Tailwind CSS Components library.
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-It prepares components CSS classes such as 'btn'. If you provide 'btn' class to `<button>` element, then there should be placed completely designed button.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="http://impuls.dev"><img src="https://avatars3.githubusercontent.com/u/8146736?v=4" width="100px;" alt="impulse"/><br /><sub><b>impulse</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=impulse" title="Code">💻</a></td>
+    <td align="center"><a href="https://gandreadis.com"><img src="https://avatars3.githubusercontent.com/u/5272244?v=4" width="100px;" alt="Georgios Andreadis"/><br /><sub><b>Georgios Andreadis</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=gandreadis" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/altruisticsoftware"><img src="https://avatars3.githubusercontent.com/u/12105346?v=4" width="100px;" alt="Chris"/><br /><sub><b>Chris</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=altruisticsoftware" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/dalwadani"><img src="https://avatars1.githubusercontent.com/u/4618082?v=4" width="100px;" alt="Dhaifallah Alwadani"/><br /><sub><b>Dhaifallah Alwadani</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=dalwadani" title="Code">💻</a></td>
+    <td align="center"><a href="http://nigelball.org"><img src="https://avatars2.githubusercontent.com/u/815408?v=4" width="100px;" alt="Nigel Ball"/><br /><sub><b>Nigel Ball</b></sub></a><br /><a href="#ideas-nigelb135" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=nigelb135" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/monte-hayward"><img src="https://avatars3.githubusercontent.com/u/3780422?v=4" width="100px;" alt="Monte Hayward"/><br /><sub><b>Monte Hayward</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=monte-hayward" title="Code">💻</a></td>
+    <td align="center"><a href="https://lukebennett.com.au"><img src="https://avatars0.githubusercontent.com/u/3422401?v=4" width="100px;" alt="Luke Bennett"/><br /><sub><b>Luke Bennett</b></sub></a><br /><a href="https://github.com/taylorbryant/gatsby-starter-tailwind/commits?author=lukebennett88" title="Code">💻</a></td>
+  </tr>
+</table>
 
-If you don't want to use it, just remove the package and remove config in `tailwind.config.js`.
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## Firebase
-
-[Firebase](https://firebase.google.com/) is a PaaS that makes us create hi-quality apps so easy and so fast.
-
-This library is not suitable for everyone, but I think it is one of the best libraries for prototyping. Therefore, I have added it to this repository.
-
-The Firebase js SDK has become very useful in version 9, with [optimizations that greatly reduce bundle size](https://firebase.google.com/docs/web/modular-upgrade).
-
-### How to Use
-
-Please look at [firebase.ts](https://github.com/TeXmeijin/vite-react-ts-tailwind-starter/blob/main/src/lib/firebase.ts).
-
-There you will find a set of utility functions to manipulate Firebase for the environment in which the Emulator is used.
-
-## Formatter and Linter
-
-Already set up [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/). You can customize the rules.
-
-NOTICE: The template does not use [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) and [prettier-eslint](https://github.com/prettier/prettier-eslint). So I recommend that running commands individually. e.g. `prettier && eslint`.
-
-Please read: https://prettier.io/docs/en/integrating-with-linters.html.
-
-# ToDo
-
-- [x] install and set up [TailwindCSS/JIT](https://github.com/tailwindlabs/tailwindcss-jit) see this [PR](https://github.com/TeXmeijin/vite-react-ts-tailwind-starter/pull/1)
-
----
-
-### Support me!
-
-<a href="https://www.buymeacoffee.com/meijin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
