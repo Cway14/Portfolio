@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Projects from '../components/projects';
-import image from '../Resources/pic.jpeg';
+import image from '../static/pic.jpeg';
 function IndexPage() {
   return (
     <Layout>

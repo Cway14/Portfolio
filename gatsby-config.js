@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `static`,
-        path: `${__dirname}/static/`,
+        path: `${__dirname}/src/static/`,
       },
     },
     {
@@ -42,5 +42,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+
   ],
 };

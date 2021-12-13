@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { FaTimes } from 'react-icons/fa';
-import motherboard from '../Resources/motherboard.jpg';
+import motherboard from '../static/motherboard.jpg';
 
 const currentProjectModal = ({ project, show }) => {
     const [showModal, setShowModal] = useState(false);
