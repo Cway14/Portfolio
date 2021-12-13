@@ -1,0 +1,23 @@
+[
+        {
+            "title": "Smart Badge",
+            "image": "motherboard"
+        },
+        {
+            "title": "Design It Suite",
+            "image": "designit",
+            "bgWhite": true
+        },
+        {
+            "title": "PERN Stack To-do App",
+            "image": "todo"
+        },
+        {
+            "title": "Android Matching Game",
+            "image": "todo"
+        },
+        {
+            "title": "Course Planner",
+            "image": "todo"
+        }
+]
