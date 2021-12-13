@@ -1,15 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 function ContactPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
-      />
+      <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="Contact" />
       <section>
         <form>
           <h2 className="mb-8 leading-loose">
@@ -25,38 +22,19 @@ function ContactPage() {
             .
           </h2>
 
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="first-name"
-          >
+          <label className="block mb-2 text-xs font-bold uppercase" htmlFor="first-name">
             First Name
           </label>
 
-          <input
-            className="w-full mb-6 rounded-md border-gray-800"
-            id="first-name"
-            placeholder="Bill"
-            type="text"
-          />
+          <input className="w-full mb-6 rounded-md border-gray-800" id="first-name" placeholder="Bill" type="text" />
 
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="last-name"
-          >
+          <label className="block mb-2 text-xs font-bold uppercase" htmlFor="last-name">
             Last Name
           </label>
 
-          <input
-            className="w-full mb-6 rounded-md border-gray-800"
-            id="last-name"
-            placeholder="Murray"
-            type="text"
-          />
+          <input className="w-full mb-6 rounded-md border-gray-800" id="last-name" placeholder="Murray" type="text" />
 
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="message"
-          >
+          <label className="block mb-2 text-xs font-bold uppercase" htmlFor="message">
             Message
           </label>
 
