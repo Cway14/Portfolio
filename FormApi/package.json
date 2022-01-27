@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon routes/routes.ts"
+    "serve": "nodemon routes/routes.ts",
+    "start": "tsc routes/routes.ts && node routes/routes.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +20,6 @@
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "nodemailer": "^6.7.2",
-    "tsc": "^2.0.4",
     "tsx": "^1.0.0"
   }
 }
