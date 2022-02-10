@@ -5,6 +5,9 @@ var express = require('express');
 var emailService = new EmailService_1.emailService();
 var app = express();
 app.use(express.json());
+app.get('/', function (req, res) {
+    res.send('Hello World!');
+});
 app.post('/', function (req, res) {
     try {
         emailService.sendMail(req.body);

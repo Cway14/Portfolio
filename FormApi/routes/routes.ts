@@ -10,6 +10,11 @@ app.use(express.json());
 interface ContactRequest extends Request {
   body: Contact;
 }
+
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello World!');
+});
+
 app.post('/', (req: ContactRequest, res: Response) => {
   try {
     emailService.sendMail(req.body);
