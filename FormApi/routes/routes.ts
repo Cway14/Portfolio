@@ -2,9 +2,11 @@ import { Request, Response } from 'express';
 import { Contact } from './Types/Contact';
 import { emailService as EmailService } from '../Services/EmailService';
 const express = require('express');
+var cors = require('cors');
 
 const emailService = new EmailService();
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 interface ContactRequest extends Request {
