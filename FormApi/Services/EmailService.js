@@ -60,6 +60,7 @@ var emailService = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        console.log(contact);
                         mailOptions = {
                             from: 'automatedcam@gmail.com',
                             to: contact.email,

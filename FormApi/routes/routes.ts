@@ -19,6 +19,7 @@ app.get('/', (req: Request, res: Response) => {
 
 app.post('/', (req: ContactRequest, res: Response) => {
   try {
+    console.log(req.body);
     emailService.sendMail(req.body);
     res.send('Message sent!');
   } catch (error) {
