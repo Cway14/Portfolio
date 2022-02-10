@@ -26,6 +26,7 @@ export class emailService {
   });
 
   async sendMail(contact: Contact) {
+    console.log(contact);
     const mailOptions = {
       from: 'automatedcam@gmail.com', // sender address
       to: contact.email, // list of receivers
