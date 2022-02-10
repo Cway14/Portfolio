@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:8000",
+        "webRoot": "${workspaceFolder}",
+        "preLaunchTask": "npm: develop"  // Add prelaunch Task (defined in tasks.json)
+      },
+      {
+        "type": "firefox",
+        "request": "launch",
+        "name": "Launch Firefox against localhost",
+        "url": "http://localhost:8000",
+        "webRoot": "${workspaceFolder}",
+        "preLaunchTask": "npm: develop"  // Add prelaunch Task (defined in tasks.json)
+      }
+    ]
+  }
