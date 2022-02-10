@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 // import resume from 'static/Resume.pdf';
-const Nav = () => {
+import { graphql } from 'gatsby';
 
-    const data = useStaticQuery(graphql`
+const Nav = () => {
+  const data = useStaticQuery(graphql`
     {
       allFile(filter: { name: { eq: "Resume" } }) {
         edges {
@@ -14,27 +15,43 @@ const Nav = () => {
         }
       }
     }
-  `)
-    const resumeURL = data.allFile?.edges[0] ? data.allFile.edges[0]?.node.publicURL : '';
+  `);
+  const resumeURL = data.allFile?.edges[0]
+    ? data.allFile.edges[0]?.node.publicURL
+    : '';
   return (
     <ul className="flex flex-row">
       <li>
-        <Link to="/about" href="/about" className="p-4 hover:text-gray-500 font-bold">
+        <Link
+          to="/about"
+          href="/about"
+          className="p-4 hover:text-gray-500 font-bold"
+        >
           About
         </Link>
       </li>
       <li>
-        <a href={resumeURL} className="p-4 hover:text-gray-500 font-bold" download="Cameron Way's Resume">
+        <a
+          href={resumeURL}
+          className="p-4 hover:text-gray-500 font-bold"
+          download="Cameron Way's Resume"
+        >
           Resume
         </a>
       </li>
       <li>
-        <a href="https://github.com/cway14" className="p-4 hover:text-gray-500 font-bold">
+        <a
+          href="https://github.com/cway14"
+          className="p-4 hover:text-gray-500 font-bold"
+        >
           Github
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/camway/" className="p-4 hover:text-gray-500 font-bold">
+        <a
+          href="https://www.linkedin.com/in/camway/"
+          className="p-4 hover:text-gray-500 font-bold"
+        >
           Linkedin
         </a>
       </li>
