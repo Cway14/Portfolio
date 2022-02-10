@@ -6,7 +6,6 @@ import motherboard from '../static/motherboard.jpg';
 import projects from '../data/projects.json';
 import CurrentProjectModal from '../components/currentProjectModal';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { graphql } from 'gatsby';
 
 function AboutPage({ location, data }) {
   const [currentProject, setCurrentProject] = useState('');

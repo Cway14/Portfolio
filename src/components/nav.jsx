@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 // import resume from 'static/Resume.pdf';
-import { graphql } from 'gatsby';
 
 const Nav = () => {
   const data = useStaticQuery(graphql`
