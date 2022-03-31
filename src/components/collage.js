@@ -17,7 +17,7 @@ const Collage = () => {
     }
   `);
 
-  const pics = ['lacrosse', 'skiing', 'hiking'];
+  const pics = ['lacrosse', 'skiing', 'hiking']; //
 
   const gatsbyImages = data?.allFile?.edges?.filter((_image) =>
     pics.includes(_image?.node.name)
