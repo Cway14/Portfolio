@@ -1,23 +1,28 @@
 [
-        {
-            "title": "Smart Badge",
-            "image": "motherboard"
-        },
-        {
-            "title": "Design It Suite",
-            "image": "designit",
-            "bgWhite": true
-        },
-        {
-            "title": "PERN Stack To-do App",
-            "image": "todo"
-        },
-        {
-            "title": "Android Matching Game",
-            "image": "todo"
-        },
-        {
-            "title": "Course Planner",
-            "image": "todo"
-        }
+  {
+    "title": "Smart Badge",
+    "image": "motherboard",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis est at congue mattis. Cras sit amet tristique est. Vestibulum non sodales leo. Cras dignissim lorem nec metus pulvinar, sit amet euismod arcu fermentum. Fusce urna purus, viverra eu orci nec, tempus vulputate risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac porta ipsum, eu auctor nulla. Maecenas ornare, orci tristique faucibus imperdiet, risus dolor porttitor neque, id lacinia felis tellus sit amet ante. Aenean feugiat ex at quam luctus interdum et a felis. Donec lacinia vulputate nisl, ut ornare mi vehicula in. Donec blandit molestie porttitor. Pellentesque sollicitudin consequat mauris, hendrerit sagittis diam blandit ut. Cras eget consectetur lectus. Vivamus porttitor vestibulum purus, sed fringilla nulla pellentesque non. Pellentesque rhoncus aliquet turpis eu commodo. Aliquam non aliquam tellus. "
+  },
+  {
+    "title": "Design It Suite",
+    "image": "designit",
+    "bgWhite": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis est at congue mattis. Cras sit amet tristique est. Vestibulum non sodales leo. Cras dignissim lorem nec metus pulvinar, sit amet euismod arcu fermentum. Fusce urna purus, viverra eu orci nec, tempus vulputate risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac porta ipsum, eu auctor nulla. Maecenas ornare, orci tristique faucibus imperdiet, risus dolor porttitor neque, id lacinia felis tellus sit amet ante. Aenean feugiat ex at quam luctus interdum et a felis. Donec lacinia vulputate nisl, ut ornare mi vehicula in. Donec blandit molestie porttitor. Pellentesque sollicitudin consequat mauris, hendrerit sagittis diam blandit ut. Cras eget consectetur lectus. Vivamus porttitor vestibulum purus, sed fringilla nulla pellentesque non. Pellentesque rhoncus aliquet turpis eu commodo. Aliquam non aliquam tellus. "
+  },
+  {
+    "title": "PERN Stack To-do App",
+    "image": "todo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis est at congue mattis. Cras sit amet tristique est. Vestibulum non sodales leo. Cras dignissim lorem nec metus pulvinar, sit amet euismod arcu fermentum. Fusce urna purus, viverra eu orci nec, tempus vulputate risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac porta ipsum, eu auctor nulla. Maecenas ornare, orci tristique faucibus imperdiet, risus dolor porttitor neque, id lacinia felis tellus sit amet ante. Aenean feugiat ex at quam luctus interdum et a felis. Donec lacinia vulputate nisl, ut ornare mi vehicula in. Donec blandit molestie porttitor. Pellentesque sollicitudin consequat mauris, hendrerit sagittis diam blandit ut. Cras eget consectetur lectus. Vivamus porttitor vestibulum purus, sed fringilla nulla pellentesque non. Pellentesque rhoncus aliquet turpis eu commodo. Aliquam non aliquam tellus. "
+  },
+  {
+    "title": "Android Matching Game",
+    "image": "todo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis est at congue mattis. Cras sit amet tristique est. Vestibulum non sodales leo. Cras dignissim lorem nec metus pulvinar, sit amet euismod arcu fermentum. Fusce urna purus, viverra eu orci nec, tempus vulputate risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac porta ipsum, eu auctor nulla. Maecenas ornare, orci tristique faucibus imperdiet, risus dolor porttitor neque, id lacinia felis tellus sit amet ante. Aenean feugiat ex at quam luctus interdum et a felis. Donec lacinia vulputate nisl, ut ornare mi vehicula in. Donec blandit molestie porttitor. Pellentesque sollicitudin consequat mauris, hendrerit sagittis diam blandit ut. Cras eget consectetur lectus. Vivamus porttitor vestibulum purus, sed fringilla nulla pellentesque non. Pellentesque rhoncus aliquet turpis eu commodo. Aliquam non aliquam tellus. "
+  },
+  {
+    "title": "Course Planner",
+    "image": "coursePlanner",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis est at congue mattis. Cras sit amet tristique est. Vestibulum non sodales leo. Cras dignissim lorem nec metus pulvinar, sit amet euismod arcu fermentum. Fusce urna purus, viverra eu orci nec, tempus vulputate risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac porta ipsum, eu auctor nulla. Maecenas ornare, orci tristique faucibus imperdiet, risus dolor porttitor neque, id lacinia felis tellus sit amet ante. Aenean feugiat ex at quam luctus interdum et a felis. Donec lacinia vulputate nisl, ut ornare mi vehicula in. Donec blandit molestie porttitor. Pellentesque sollicitudin consequat mauris, hendrerit sagittis diam blandit ut. Cras eget consectetur lectus. Vivamus porttitor vestibulum purus, sed fringilla nulla pellentesque non. Pellentesque rhoncus aliquet turpis eu commodo. Aliquam non aliquam tellus. "
+  }
 ]

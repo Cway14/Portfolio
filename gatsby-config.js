@@ -1,8 +1,3 @@
-const resolveConfig = require('tailwindcss/resolveConfig');
-const tailwindConfig = require('./tailwind.config.js');
-
-const fullConfig = resolveConfig(tailwindConfig);
-
 module.exports = {
   siteMetadata: {
     title: `Cameron Way`,
@@ -11,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-eslint`,
+    `gatsby-plugin-recaptcha`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,8 +21,6 @@ module.exports = {
         name: `Cameron Way`,
         short_name: `Cam Way`,
         start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.green['500'],
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
@@ -35,16 +29,41 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
+          ...(process.env.NODE_ENV === `production`
+            ? [require(`cssnano`)]
+            : []),
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          'GA-TRACKING_ID', // Google Analytics / GA
+          'AW-CONVERSION_ID', // Google Ads / Adwords / AW
+          'DC-FLOODIGHT_ID', // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          optimize_id: 'OPT_CONTAINER_ID',
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+        },
+      },
+    },
     `gatsby-plugin-offline`,
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 };

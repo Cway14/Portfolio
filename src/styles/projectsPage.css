@@ -1,0 +1,34 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects.item {
+  margin: 4rem;
+  width: calc(100% - 8rem);
+}
+
+.projects.item.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects.item.right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.projects.item w-13 {
+  width: 33%;
+}
+
+.projects.item h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.projects.item.image {
+  max-width: 33%;
+  min-width: 33%;
+  max-height: 14rem;
+}
