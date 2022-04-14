@@ -1,28 +1,44 @@
 import React from 'react';
 import image from '../static/pic.jpeg';
 import { FaGithub } from 'react-icons/fa';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { graphql } from 'gatsby';
+import '../styles/projects.css';
 
 const ProjectCard = (props) => {
-  const { title, bgWhite, githubLink, data } = props;
-  const image = data?.allFile?.edges?.find(
-    (image) => image?.node.name === project.image
+  const { title, bgWhite, githubLink, image } = props;
+  const data = useStaticQuery(graphql`
+    query projectImages {
+      allFile {
+        edges {
+          node {
+            name
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const gatsbyImage = data?.allFile?.edges?.find(
+    (_image) => _image?.node.name === image
   )?.node?.childImageSharp?.gatsbyImageData;
 
   return (
-    <div className="h-64 w-1/3 rounded-xl shadow-md m-4 flex flex-col flex-shrink-0 overflow-hidden transform hover:-translate-y-2 hover:shadow-lg duration-300">
-      <Link to="/projects" state={{ title: title || '' }}>
-        <div
-          className={(bgWhite ? ' ' : 'bg-black ') + 'w-full overflow-hidden'}
-        >
-          <GatsbyImage image={image} />
+    <div className="card">
+      <Link
+        to={`/projects#project-${title.replace(/ /g, '')}`}
+        state={{ title: title || '' }}
+      >
+        <div className="card-image">
+          <GatsbyImage image={gatsbyImage} />
         </div>
-        <div className="p-3 font-medium flex justify-between items-center">
-          <h3 className="text-lg p-2">{title}</h3>
+        <div className="card-text">
+          <h3>{title}</h3>
           {githubLink && (
-            <a href={githubLink} className="text-2xl p-2 hover:text-gray-600">
+            <a href={githubLink}>
               <FaGithub />
             </a>
           )}
@@ -31,20 +47,5 @@ const ProjectCard = (props) => {
     </div>
   );
 };
-
-export const imageQuery = graphql`
-  query {
-    allFile {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default ProjectCard;

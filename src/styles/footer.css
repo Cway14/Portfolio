@@ -1,0 +1,10 @@
+.footer {
+  object-position: bottom;
+  border-top-width: 1px;
+  padding: 1rem 0;
+  background-color: var(--bg-light);
+  text-align: center;
+  width: 100%;
+  color: var(--header-color);
+  margin-top: auto;
+}
