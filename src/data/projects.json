@@ -1,23 +1,37 @@
 [
-        {
-            "title": "Smart Badge",
-            "image": "motherboard"
-        },
-        {
-            "title": "Design It Suite",
-            "image": "designit",
-            "bgWhite": true
-        },
-        {
-            "title": "PERN Stack To-do App",
-            "image": "todo"
-        },
-        {
-            "title": "Android Matching Game",
-            "image": "todo"
-        },
-        {
-            "title": "Course Planner",
-            "image": "todo"
-        }
+  {
+    "title": "Smart Badge",
+    "image": "motherboard",
+    "description": "During my time at Design It as a Junior Developer, I was responsible for the development of a 'Smart Badge', an embeded device used for asset tracking and access control for a mining company. I was responsible for gathering technical requirements, developing firmware in C++, and entrusted with thousands of dollars worth of hardware design. Through this project, I learned a lot about embedded systems and developing software closely tied to its hardware. I developed these badges to transmit data using a LoRa mesh network in order to travel across many kilometers without the need for towers."
+  },
+  {
+    "title": "Design It Suite",
+    "image": "designit",
+    "bgWhite": true,
+    "description": "After moving on from the Smart Badge project at Design IT, I was given the opportunity to work along with a larger team on a suite of software tools. The team worked in React and ABP, an ASP.NET framework. During this project, I was responsible for building my own module from the ground up, and implementing new feature requests from the client. This project taught me how to work in a large code base with numerous other developers making conccurent changes."
+  },
+  {
+    "title": "PERN Stack To-do App",
+    "image": "todo",
+    "description": "While I was busy learning the fundamentals of Computing Science through my coursework, I often found myself wondering how a lot of concepts I was learning in school were applied in the real world. I then decided it best to create a full stack application in order to understand all aspects of application development. By creating this application I learned how to create and query a SQL database, develop a REST API to work with it, and display the data on the frontend.",
+    "link": "https://todo.camway.ca",
+    "linkDescription": "Demo",
+    "githubLink": "#"
+  },
+  {
+    "title": "Android Matching Game",
+    "image": "todo",
+    "description": "As part of my coursework, my group and I were tasked with creating a game that would be used to match images on two cards. We developed the game using Java and Android Studio. Part of the project was to handle changing user requirements, and implementing new features with maintainability in mind. This project was where I learned how to use Git in a team environment, and how to write maintainable code.",
+    "link": "https://todo.camway.ca",
+    "linkDescription": "Demo",
+    "githubLink": "#"
+  },
+  {
+    "title": "Course Planner",
+    "image": "coursePlanner",
+    "description": "Throughout the first few years of my degree I found it difficult to keep track of degree requirements, course prerequisites, and breadth requirements. During SFU's Computing Science Student Society Hackathon in my second year, my and my group decided to address this issue by creating an interactive course planner. Being the only one in our group with prior web development experience, I spend a good amount of time teaching the basics of React to my group mates. We then sourced the course requirements and description data from various SFU sites and consolidated the data into one, interactive UI.",
+    "link": "https://csss.camway.ca",
+    "linkDescription": "Demo",
+    "githubLink": "#"
+  }
 ]

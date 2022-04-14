@@ -1,3 +1,139 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --bg-light: rgb(255, 255, 255);
+  --bg-dark: rgb(255, 255, 255);
+  --header-color: rgb(87, 91, 97);
+  --text-color: rgb(87, 91, 97);
+  --text-light: rgb(255, 255, 255);
+  --link-hover: rgb(41, 43, 46);
+  --accent: black;
+}
+
+[data-theme='dark'] {
+  --bg-light: rgb(24 24 24);
+  --bg-dark: rgb(32 32 32);
+  --header-color: rgb(255, 255, 255);
+  --text-color: rgb(148, 163, 184);
+  --text-light: rgb(255, 255, 255);
+  --link-hover: rgb(109, 120, 136);
+  --accent: var(--bg-dark);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.5rem;
+  background-color: var(--bg-dark);
+  color: var(--header-color);
+  position: relative;
+  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-color);
+  font-weight: 500;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.cover-image {
+  width: 34%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cover-text {
+  width: 66%;
+  padding: 3rem 2rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.cover-text h2 {
+  font-size: 3rem;
+  line-height: 1rem;
+  color: var(--header-color);
+}
+
+.cover-container {
+  padding: 6rem 3rem;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  line-height: 1.5rem;
+  font-weight: bolder;
+}
+
+.section {
+  width: 66%;
+  padding: 2rem 3rem 0;
+}
+
+.section-text {
+  padding: 0.5rem 0 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.about.link.linkedin {
+  color: #0072b1;
+}
+
+.about.link.github {
+  color: #6e5494;
+}
+
+.about.link {
+  font-weight: 500;
+  text-decoration: underline;
+}

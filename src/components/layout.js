@@ -6,10 +6,11 @@ import Footer from './footer';
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
+    <div className="layout">
       <Header />
-
-      <main className="flex-1 w-full px-4 pb-8 mx-auto md:px-8">{children}</main>
+      <main className="flex-1 w-full px-4 pb-8 mx-auto md:px-8 max-w-7xl h-full content">
+        {children}
+      </main>
 
       <Footer />
     </div>

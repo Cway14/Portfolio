@@ -1,67 +1,63 @@
-import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-// import resume from 'static/Resume.pdf';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'gatsby';
+import { FaMoon } from 'react-icons/fa';
+import '../styles/header.css';
 
 const Nav = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { name: { eq: "Resume" } }) {
-        edges {
-          node {
-            publicURL
-            name
-          }
-        }
-      }
+  const [theme, setTheme] = useState('');
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+      ? localStorage.getItem('theme')
+      : 'light';
+    if (storedTheme) {
+      setTheme(storedTheme);
+      document.documentElement.setAttribute('data-theme', storedTheme);
     }
-  `);
-  const resumeURL = data.allFile?.edges[0]
-    ? data.allFile.edges[0]?.node.publicURL
-    : '';
+  }, []);
+
+  const toggleTheme = () => {
+    let newTheme = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
+  };
+
   return (
-    <ul className="flex flex-row">
+    <ul className="nav">
       <li>
-        <Link
-          to="/about"
-          href="/about"
-          className="p-4 hover:text-gray-500 font-bold"
-        >
+        <Link to="/about" href="/about" className="nav-link">
           About
         </Link>
       </li>
       <li>
-        <a
-          href={resumeURL}
-          className="p-4 hover:text-gray-500 font-bold"
-          download="Cameron Way's Resume"
-        >
+        <a href="/resume" className="nav-link">
           Resume
         </a>
       </li>
       <li>
-        <a
-          href="https://github.com/cway14"
-          className="p-4 hover:text-gray-500 font-bold"
-        >
+        <a href="https://github.com/cway14" className="nav-link">
           Github
         </a>
       </li>
       <li>
-        <a
-          href="https://www.linkedin.com/in/camway/"
-          className="p-4 hover:text-gray-500 font-bold"
-        >
+        <a href="https://www.linkedin.com/in/camway/" className="nav-link">
           Linkedin
         </a>
       </li>
       <li>
-        <Link
-          to="/projects"
-          className="bg-black text-white px-4 hover:text-gray-300 font-bold py-3 rounded-lg items-center ml-4 mr-2"
-        >
-          {' '}
+        <Link to="/projects" className="header-projects">
           View Work
         </Link>
+      </li>
+      <li className="p-8 hover:text-gray-500">
+        <button
+          title="Toggle dark/light mode"
+          type="button"
+          onClick={(e) => toggleTheme(e)}
+        >
+          <FaMoon />
+        </button>
       </li>
     </ul>
   );

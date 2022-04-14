@@ -17,7 +17,7 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
 
-app.post('/', (req: ContactRequest, res: Response) => {
+app.post('/contact-form', (req: ContactRequest, res: Response) => {
   try {
     emailService.sendMail(req.body);
     res.send('Message sent!');

@@ -1,0 +1,7 @@
+.resume {
+  display: inline;
+  border-radius: 0.375rem;
+  width: calc(100% - 8rem);
+  height: calc(100vh - 6rem);
+  margin: 0.5rem 4rem;
+}

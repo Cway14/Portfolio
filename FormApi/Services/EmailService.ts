@@ -26,7 +26,6 @@ export class emailService {
   });
 
   async sendMail(contact: Contact) {
-    console.log(contact);
     const mailOptions = {
       from: 'automatedcam@gmail.com', // sender address
       to: contact.email, // list of receivers
@@ -34,8 +33,13 @@ export class emailService {
       text: contact.message, // plain text body
       html: contact.message, // html body
     };
-    await this.transporter.sendMail(mailOptions, (error: any, data: any) =>
-      console.log(error, data)
+    const result = await this.transporter.sendMail(
+      mailOptions,
+      (error: any, data: any) => {
+        if (error) throw error;
+        console.log(error, data);
+      }
     );
+    console.log(result);
   }
 }
