@@ -51,7 +51,11 @@ const Nav = () => {
         </Link>
       </li>
       <li className="p-8 hover:text-gray-500">
-        <button type="button" onClick={(e) => toggleTheme(e)}>
+        <button
+          title="Toggle dark/light mode"
+          type="button"
+          onClick={(e) => toggleTheme(e)}
+        >
           <FaMoon />
         </button>
       </li>

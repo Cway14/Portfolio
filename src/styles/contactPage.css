@@ -1,0 +1,90 @@
+.contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 850px;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.current-question {
+  bottom: 50%;
+}
+
+.question {
+  margin: 1rem 0;
+  width: 100%;
+  position: absolute;
+  max-width: 850px;
+}
+
+.contact-input {
+  height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #3271a8;
+  border-bottom: 2px solid #3271a8;
+  outline: none;
+  width: 100%;
+  max-width: 850px;
+  background-color: var(--bg-dark);
+  color: var(--text-color);
+}
+
+.contact-question {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.contact-start-form {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #0077b5;
+  color: white;
+  border-radius: 5px;
+}
+
+.next-question {
+  display: none;
+}
+
+.submit-contact {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: #0077b5;
+  color: white;
+  border-radius: 5px;
+}
+
+.slideFromBottom {
+  animation-name: slideFromBottom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+
+.slideToTop {
+  animation-name: slideToTop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+
+@keyframes slideFromBottom {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 50%;
+  }
+}
+
+@keyframes slideToTop {
+  from {
+    bottom: 50%;
+  }
+  to {
+    bottom: 100%;
+  }
+}

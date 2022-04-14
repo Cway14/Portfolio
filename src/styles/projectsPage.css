@@ -4,17 +4,18 @@
 }
 
 .projects.item {
-  margin: 4rem;
+  margin: 2rem 4rem 1.5rem;
   width: calc(100% - 8rem);
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .projects.item.left {
-  display: flex;
   flex-direction: row;
 }
 
 .projects.item.right {
-  display: flex;
   flex-direction: row-reverse;
 }
 

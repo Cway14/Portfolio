@@ -9,10 +9,7 @@ import Collage from '../components/collage';
 function AboutPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About"
-      />
+      <SEO keywords={[`gatsby`, `react`]} title="About" />
 
       <section className="">
         <Collage />
