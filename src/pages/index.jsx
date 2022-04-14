@@ -1,16 +1,14 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Projects from '../components/projects';
 import image from '../static/pic.jpeg';
+
 function IndexPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
-      />
+      <SEO keywords={[`gatsby`, `react`]} title="Home" />
 
       <div className="cover-container">
         <div className="flex">
@@ -24,8 +22,27 @@ function IndexPage() {
               Canada. I am studying Computer Science and Business. I am
               constantly curious about the world around me and always open to
               learning new things. When I am not at my computer, I can often be
-              found playing lacrosse, working out, or skiing. I am currently
-              working on improving this website. I hope you enjoy it!
+              found playing lacrosse, working out, or skiing. To see my work,
+              check out my{' '}
+              <Link to="/projects" className="about link">
+                Project's Page
+              </Link>{' '}
+              or{' '}
+              <a href="https://github.com/cway14" className="about link github">
+                Github
+              </a>
+              . You can get a hold of me through my{' '}
+              <a
+                href="https://www.linkedin.com/in/camway/"
+                className="about link linkedin"
+              >
+                LinkedIn
+              </a>{' '}
+              or{' '}
+              <Link to="/contact" className="about link">
+                Contact Page
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -48,16 +65,11 @@ function IndexPage() {
             computer.
           </p>
           <p>
-            <strong>Frontend Development:</strong> HTML, CSS, Javascript, React
-            (and Gatsby), AngularJS, Bootstrap, TailwindCSS
+            Frontend Deve HTML, CSS, Javascript, React (and Gatsby), AngularJS,
+            Bootstrap, TailwindCSS
           </p>
-          <p>
-            <strong>Backend Development:</strong> Node.js, SQL, ASP.Net, C#,
-            Python, Java
-          </p>
-          <p>
-            <strong>Embedded Systems:</strong> C/C++, Arduino, Raspberry Pi
-          </p>
+          <p>Backend Deve Node.js, SQL, ASP.Net, C#, Python, Java</p>
+          <p>Embedded C/C++, Arduino, Raspberry Pi</p>
         </div>
       </div>
     </Layout>
